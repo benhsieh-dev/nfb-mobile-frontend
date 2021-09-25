@@ -1,0 +1,7 @@
+{
+  "name": "NFB-mobile-android",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
