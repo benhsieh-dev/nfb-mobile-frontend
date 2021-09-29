@@ -11,4 +11,38 @@ ion-content{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ion-card{
+    text-align: center;
+
+    // background-color: transparent;
+    // box-shadow: none;
+
+    img{
+        height: 7rem;
+        width: 7.2rem;
+    }
+    ion-card-title{
+        font-size: 20px;
+        // color: #D2EDDD;
+        color: #1C3E90;        
+        font-weight: 400;
+    }
+
+    ion-card-content{
+        margin-top: 20px;
+
+        ion-button{
+            width: 180px;
+            height: 60px;
+            --border-radius: 40px;
+            // background: #1C3E90;
+            color: #FFF;
+            font-weight: 400;
+            text-transform: none;
+        }
+    }
 }
