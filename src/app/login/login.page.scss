@@ -20,3 +20,38 @@ ion-content{
     display: flex;
     flex-direction: column;
 }
+
+.shape{
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    img{
+        opacity: 0.9;
+    }
+}
+
+ion-card{
+    margin-top: 130px;
+    background: transparent;
+    box-shadow: none;
+    text-align: center;
+
+    ion-card-title{
+        color: #242020;
+        font-size: 30px;
+    }
+
+    ion-card-subtitle{
+        color: #bbbbbb;
+        font-size: 14px;
+        font-weight: 400;
+
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: #198645;
+            font-size: 15px;
+        }
+    }
+}
