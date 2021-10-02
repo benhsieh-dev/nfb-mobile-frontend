@@ -8,7 +8,6 @@ const routes: Routes = [
   },
   {
     path: '',
-    // redirectTo: 'folder/Inbox',
     redirectTo: 'login',
     pathMatch: 'full'
   },
