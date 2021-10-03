@@ -77,5 +77,28 @@ ion-card{
                 --padding-start: 30px;
             }
         }
+        a{
+            text-decoration: none;
+            color: #589b3f;
+            font-weight: 300;
+            font-size: 13px;
+        }
+    }
+    .bottom-section{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ion-button{
+            height: 53px;
+            width: 247px;
+            font-size: 14px;
+            text-transform: none;
+            --background: #198645; 
+              font-weight: 300;
+            --border-radius: 15px !important;
+              color: #fff;
+        }
     }
 }
