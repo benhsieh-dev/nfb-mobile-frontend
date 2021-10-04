@@ -100,5 +100,13 @@ ion-card{
             --border-radius: 15px !important;
               color: #fff;
         }
+
+        span{
+            margin-top: 20px;
+
+            a{
+                font-weight: 500;
+            }
+        }
     }
 }
