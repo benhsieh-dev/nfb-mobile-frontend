@@ -4,6 +4,7 @@
     height: 80px !important;
     --min-height:105px !important;
     margin: 0;
+    font-size: 14px;
 }
 
 .header-md .main-toolbar{
@@ -12,6 +13,7 @@
     height: 80px !important;
     --min-height:105px !important;
     margin: 0;
+    font-size: 14px;
 }
 
 .header-ios, .header-md ion-title{
@@ -21,4 +23,50 @@
     padding-left: 30px;
     color: #E5E5E5;
     font-size: 11px;
+}
+
+.small-toolbar{
+    --background:transparent !important;
+    text-align: right !important;
+    margin-right: 20px;
+}
+
+.small-toolbar .icon{
+    font-size: 26px;
+    color: grey;
+}
+
+.header-md{
+    .title-toolbar{
+        text-align: lef;
+        padding-left: 50px;
+        font-family: Montserrat;
+        font-weight: 200;
+        font-style: normal;
+    }
+}
+
+.header-ios{
+    .title-toolbar{
+        text-align: lef;
+        padding-left: 50px;
+        font-family: Montserrat;
+        font-weight: 200;
+        font-style: normal;
+    }
+}
+
+.title-toolbar{
+    text-align: lef;
+    padding-left: 50px;
+    font-family: Montserrat;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.title-toolbar .title{
+    font-family: LibreBaskerville;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3F9B99;
 }
