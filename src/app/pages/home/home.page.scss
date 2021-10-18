@@ -22,7 +22,16 @@
     font-weight: 200;
     padding-left: 30px;
     color: #E5E5E5;
-    font-size: 11px;
+    font-size: 12px;
+}
+
+ion-title{
+    padding-inline-start: 0;
+    font-family: Montserrat_Regular;
+    font-weight: 200;
+    padding-left: 30px;
+    color: #d4d4d4;
+    font-size: 12px;
 }
 
 .small-toolbar{
@@ -57,16 +66,19 @@
 }
 
 .title-toolbar{
-    text-align: lef;
+    text-align: left;
     padding-left: 50px;
     font-family: Montserrat;
     font-weight: 200;
     font-style: normal;
+    position: absolute;
+    top: 6px;
+    color: #A79A9A;
 }
 
 .title-toolbar .title{
     font-family: LibreBaskerville;
     font-size: 18px;
     font-weight: 700;
-    color: #3F9B99;
+    color: #3F9B99 !important;
 }
