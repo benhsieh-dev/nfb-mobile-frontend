@@ -82,3 +82,35 @@ ion-title{
     font-weight: 700;
     color: #3F9B99 !important;
 }
+
+// content?
+#container{
+    display: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+// searched-bar? #content .searchbar?
+.searchbar{
+    padding: 0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ion-searchbar {
+    box-shadow: none;
+    --border-radius: 15px;
+    color: #C0BFBF; 
+    background: #E6E6E6;
+}
+
+.searchbar-md .searchbar-input{
+    background: rgb(190, 190, 190) !important;
+}
