@@ -14,8 +14,16 @@
 </ion-header>
 
 <ion-content fullscreen="true">
-  <div id="content">
-    <ion-searchbar></ion-searchbar>
+  <div id="container">
+    <ion-searchbar placeholder="Find a product" no-shadow></ion-searchbar>
+
+    <div class="main-feature-products">
+      <ion-slides pager="true" [options]="options">
+        <ion-slide>Slide one</ion-slide>
+        <ion-slide>Slide two</ion-slide>
+        <ion-slide>Slide three</ion-slide>
+      </ion-slides>
+    </div>
   </div>
 
 </ion-content>

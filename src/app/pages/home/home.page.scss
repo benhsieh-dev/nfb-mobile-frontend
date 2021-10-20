@@ -2,7 +2,7 @@
     --background:transparent !important;
     --border-width: 0 !important;
     height: 80px !important;
-    --min-height:105px !important;
+    --min-height:135px !important;
     margin: 0;
     font-size: 14px;
 }
@@ -11,7 +11,7 @@
     --background:transparent !important;
     --border-width: 0 !important;
     height: 80px !important;
-    --min-height:105px !important;
+    --min-height:135px !important;
     margin: 0;
     font-size: 14px;
 }
@@ -47,8 +47,8 @@ ion-title{
 
 .header-md{
     .title-toolbar{
-        text-align: lef;
-        padding-left: 50px;
+        text-align: left;
+        padding-left: 30px;
         font-family: Montserrat;
         font-weight: 200;
         font-style: normal;
@@ -57,8 +57,8 @@ ion-title{
 
 .header-ios{
     .title-toolbar{
-        text-align: lef;
-        padding-left: 50px;
+        text-align: left;
+        padding-left: 30px;
         font-family: Montserrat;
         font-weight: 200;
         font-style: normal;
@@ -108,7 +108,7 @@ ion-searchbar {
     box-shadow: none;
     --border-radius: 15px;
     color: #C0BFBF; 
-    background: #E6E6E6;
+    background: #FBFBFB;
 }
 
 .searchbar-md .searchbar-input{
