@@ -19,7 +19,27 @@
 
     <div class="main-feature-products">
       <ion-slides pager="true" [options]="options">
-        <ion-slide>Slide one</ion-slide>
+        <ion-slide>
+          <ion-card>
+            <ion-card-content>
+              <img src="../../../assets/tiramisu-cake.jpg" />
+
+              <ion-card-subtitle>
+                <ion-item lines="none" full="true" (click)="appRating()">
+                  <ion-icon name="star" color="warning"></ion-icon>
+                  <ion-icon name="star" color="warning"></ion-icon>
+                  <ion-icon name="star" color="warning"></ion-icon>
+                  <ion-icon name="star" color="warning"></ion-icon>
+                </ion-item>
+              </ion-card-subtitle>
+
+              <ion-title>
+                Tiramisu Cake
+              </ion-title>
+              
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
         <ion-slide>Slide two</ion-slide>
         <ion-slide>Slide three</ion-slide>
       </ion-slides>
