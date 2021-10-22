@@ -5,6 +5,8 @@
     --min-height:135px !important;
     margin: 0;
     font-size: 14px;
+    // added
+    color: gold; 
 }
 
 .header-md .main-toolbar{
@@ -14,6 +16,8 @@
     --min-height:135px !important;
     margin: 0;
     font-size: 14px;
+    // added
+    color: gold; 
 }
 
 .header-ios, .header-md ion-title{
@@ -113,4 +117,10 @@ ion-searchbar {
 
 .searchbar-md .searchbar-input{
     background: rgb(190, 190, 190) !important;
+}
+
+// added
+ion-card-content {
+    top: 325px;
+    height: 700px; 
 }
