@@ -5,8 +5,7 @@
     --min-height:135px !important;
     margin: 0;
     font-size: 14px;
-    // added
-    color: gold; 
+    color: #000; 
 }
 
 .header-md .main-toolbar{
@@ -16,8 +15,7 @@
     --min-height:135px !important;
     margin: 0;
     font-size: 14px;
-    // added
-    color: gold; 
+    color: #000; 
 }
 
 .header-ios, .header-md ion-title{
@@ -87,7 +85,6 @@ ion-title{
     color: #3F9B99 !important;
 }
 
-// content?
 #container{
     display: absolute;
     left: 0;
@@ -96,7 +93,6 @@ ion-title{
     transform: translateY(-50%);
 }
 
-// searched-bar? #content .searchbar?
 .searchbar{
     padding: 0px;
     position: absolute;
@@ -119,8 +115,42 @@ ion-searchbar {
     background: rgb(190, 190, 190) !important;
 }
 
-// added
-ion-card-content {
-    top: 325px;
-    height: 700px; 
+// ion-card-content {
+//     padding-top: 325px;
+//     height: 700px; 
+// }
+
+// main featured product section
+
+.main-featured-products{
+    color: #000 !important;
+    height: 100px;
+}
+
+.swiper-slide{
+    color: red; 
+    background: #2E8B53;
+}
+
+.main-product-card img{
+    padding: 80px 0px 20px 0px;
+}
+
+ion-card-content{
+    text-align: center;
+}
+
+ion-card-title{
+    font-size: 14px;
+    font-family: Montserrat_Regular;
+    color: #fff;
+    font-weight: 200;
+}
+
+ion-card-subtitle{
+    font-size: 8px;
+    font-family: Montserrat_Regular;
+    color: #cfcfcf;
+    font-weight: 200;
+    padding-top: 10px;
 }
