@@ -129,9 +129,12 @@ ion-searchbar {
 
 .swiper-slide{
     color: red; 
-    background: #2E8B53;
 }
 
+.main-product-card{
+    background: #2E8B53;
+    border-radius: 20;
+}
 .main-product-card img{
     padding: 80px 0px 20px 0px;
 }
@@ -153,4 +156,27 @@ ion-card-subtitle{
     color: #cfcfcf;
     font-weight: 200;
     padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+ion-item{
+    --background: transparent;
+    text-align: left;
+    margin-left: 0;
+    --padding-start: 0px;
+    --webkit-padding-start: 0;
+    --min-height: 0;
+    width: 60px !important;
+
+    ion-icon{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0px;
+        font-size: 13px;
+        margin-inline: 0 2px;
+    }
+}
+
+.time-icon{
+    padding-top: 6px;
 }
