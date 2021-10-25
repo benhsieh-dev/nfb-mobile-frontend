@@ -15,10 +15,13 @@
 
 <ion-content fullscreen="true">
   <div id="container">
-    <ion-searchbar placeholder="Find a product" no-shadow></ion-searchbar>
+
+    <div class="searchbar">
+      <ion-searchbar placeholder="Find a product" no-shadow></ion-searchbar>
+    </div>
 
     <div class="main-feature-products">
-      <ion-slides pager="true" [options]="options">
+      <ion-slides pager="true" [options]="options" (click)="appRating()">
         <ion-slide>
           <ion-card class="main-product-card">
             <ion-card-content>
@@ -45,7 +48,34 @@
             </ion-card-content>
           </ion-card>
         </ion-slide>
-        <ion-slide>Slide two</ion-slide>
+        
+        <ion-slide>
+          <ion-card class="card-wrapper main-product-card">
+            <ion-card-content>
+              <img src="../../../assets/tiramisu-cake.jpg" />
+        
+              <ion-title>
+                Tiramisu Cake
+              </ion-title>
+        
+              <ion-card-subtitle>
+                <ion-item lines="none" full="true" (click)="appRating()">
+                  <ion-icon name="star" color="warning"></ion-icon>
+                  <ion-icon name="star" color="warning"></ion-icon>
+                  <ion-icon name="star" color="warning"></ion-icon>
+                  <ion-icon name="star" color="warning"></ion-icon>
+                </ion-item>
+        
+                <div class="time-icon">
+                  <ion-icon ios="timer-outline" md="timer" color="warning"></ion-icon>
+                  5 minutes ago
+                </div>
+              </ion-card-subtitle>
+        
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+
         <ion-slide>Slide three</ion-slide>
       </ion-slides>
     </div>

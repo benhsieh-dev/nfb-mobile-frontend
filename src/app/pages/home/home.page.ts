@@ -9,6 +9,18 @@ export class HomePage implements OnInit {
 
   constructor() { }
 
+  // options = {
+  //   slidesPreview: 1.5,
+  //   centered: true,
+  //   spaceBetweenView: 10
+  // }
+
+  // sliderOptions= {
+  //   initialSlide: 0,
+  //   slidesPerView: 1,
+  //   speed: 400
+  // }
+
   ngOnInit() {
   }
 

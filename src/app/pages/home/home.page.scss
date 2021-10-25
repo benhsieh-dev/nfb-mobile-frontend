@@ -115,16 +115,22 @@ ion-searchbar {
     background: rgb(190, 190, 190) !important;
 }
 
-// ion-card-content {
-//     padding-top: 325px;
-//     height: 700px; 
-// }
+
 
 // main featured product section
 
 .main-featured-products{
     color: #000 !important;
     height: 100px;
+}
+
+ion-slides{
+    --bullet-background: white;
+    --bullet-background-active: yellow; 
+}
+
+.card-wrapper{
+    background: #F2BC54 !important;
 }
 
 .swiper-slide{
@@ -156,7 +162,7 @@ ion-card-subtitle{
     color: #cfcfcf;
     font-weight: 200;
     padding-top: 10px;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
 }
 
 ion-item{
