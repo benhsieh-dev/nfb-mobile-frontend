@@ -186,3 +186,29 @@ ion-item{
 .time-icon{
     padding-top: 6px;
 }
+
+// custom styles for popular section
+
+ion-segment-button{
+    --indicator-box-shadow: transparent !important;
+    --border-radius: 2rem !important;
+    padding: 0 0.1em !important;
+    --color: #dcddde;
+    --color-checked: #33691e !important;
+    --indicator-color: #33691e !important;
+    --min-height: 0 !important;
+    font-size: 10px !important;
+}
+
+.segment-toolbar {
+    --background: transparent !important; 
+    margin-bottom: 30px; 
+    --height: 20px;
+    --min-height: 40px;
+    padding: 0px !important;
+}
+
+ion-segment{
+    background: transparent !important;
+}
+

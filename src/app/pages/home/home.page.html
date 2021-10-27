@@ -87,8 +87,8 @@
   <div class="popular-products-section">
   
     <ion-header class="ion-no-border" style="background: #F4FAF6">
-      <ion-toolbar style="--background:translate; margin-bottom:30px; --height:20px;">
-        <ion-segment mod="ios" style="--min-height: 0 !important;">
+      <ion-toolbar class="segment-toolbar">
+        <ion-segment mod="ios" style="--min-height: 0 !important;" [ngModel]="segment" (inChange)="segmentChange(value)">
           <ion-segment-button value="0">
             <ion-label>
               Popular
