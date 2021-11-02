@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     // redirectTo: 'home',
-    pathMatch: 'full',
+    // pathMatch: 'full',
     loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
   },
    {
