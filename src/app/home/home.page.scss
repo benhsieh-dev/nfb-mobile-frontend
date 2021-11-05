@@ -1,3 +1,10 @@
-.home-page-search {
-    display: flex; 
+.home-page-shopping-cart {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    font-size: 26px;
+}
+
+ion-searchbar {
+    --border-radius: 20px; 
 }
