@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
+  // categories = [
+  //   'Beverages',
+  //   'Breads',
+  //   'Cakes',
+  //   'Mooncakes',
+  //   'Muffins',
+  //   'Pastries',
+  //   'Sandwiches',
+  //   'Tarts'
+  // ];
+
   constructor() { }
 
   ngOnInit() {
