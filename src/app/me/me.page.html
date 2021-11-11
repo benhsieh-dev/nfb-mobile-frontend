@@ -9,4 +9,40 @@
     <ion-icon name="cart"></ion-icon>
   </div>
 
+  <ion-row>
+    <ion-list lines="full">
+      <ion-list-header>
+        <ion-label>
+          Mobile Phone Sign In
+        </ion-label>
+      </ion-list-header>
+      <ion-item-group>
+        <form [formGroup]="form">
+          <ion-item>
+            <ion-input 
+              formControlName="phone" 
+              placeholder="Mobile Number"
+              type="tel"
+              minlength="10"
+              maxlength="10">
+            </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-icon 
+              [name]="type ? 'eye-outline' : 'eye-offline'" 
+              slot="end" 
+              color="medium"
+              (click)="changeType()">
+            </ion-icon>
+            <ion-input
+              formControlName="password" 
+              placeholder="Password"
+              [type]="type ? 'password' : 'text'">
+            </ion-input>
+          </ion-item>
+        </form>
+      </ion-item-group>
+    </ion-list>
+  </ion-row>
+
 </ion-content>

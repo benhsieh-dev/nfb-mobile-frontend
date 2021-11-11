@@ -4,3 +4,10 @@
     margin-right: 10px;
     font-size: 26px;
 }
+
+ion-row {
+    display: block;
+    ion-list {
+        --border-radius: 20px;
+    }
+}
