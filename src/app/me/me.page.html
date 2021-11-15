@@ -18,28 +18,51 @@
       </ion-list-header>
       <ion-item-group>
         <form [formGroup]="form">
-          <ion-item>
-            <ion-input 
-              formControlName="phone" 
-              placeholder="Mobile Number"
-              type="tel"
-              minlength="10"
-              maxlength="10">
-            </ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-icon 
-              [name]="type ? 'eye-outline' : 'eye-offline'" 
-              slot="end" 
-              color="medium"
-              (click)="changeType()">
-            </ion-icon>
-            <ion-input
-              formControlName="password" 
-              placeholder="Password"
-              [type]="type ? 'password' : 'text'">
-            </ion-input>
-          </ion-item>
+          <div>
+            <ion-item>
+              <ion-input 
+                formControlName="phone" 
+                placeholder="Mobile Number"
+                type="tel"
+                minlength="10"
+                maxlength="10">
+              </ion-input>
+            </ion-item>
+            <ion-text *ngIf="!form.get('phone').valid && form.get('phone').touched">
+              <ion-text *ngIf="form.get('phone').hasError('required')" color="danger">
+                * Please enter the mobile number
+              </ion-text>
+              <ion-text *ngIf="form.get('phone').hasError('minlength') 
+              && !form.get('phone').hasError('required')" color="danger">
+                * Please enter a valid mobile number
+              </ion-text>
+            </ion-text>
+          </div>
+
+          <div>
+            <ion-item>
+              <ion-icon 
+                [name]="type ? 'eye-outline' : 'eye-offline'" 
+                slot="end" 
+                color="medium"
+                (click)="changeType()">
+              </ion-icon>
+              <ion-input
+                formControlName="password" 
+                placeholder="Password"
+                [type]="type ? 'password' : 'text'">
+              </ion-input>
+            </ion-item>
+            <ion-text *ngIf="!form.get('password').valid && form.get('password').touched">
+              <ion-text *ngIf="form.get('password').hasError('required')" color="danger">
+                * Please enter the password
+              </ion-text>
+              <ion-text *ngIf="form.get('password').hasError('minlength') 
+                          && !form.get('password').hasError('required')" color="danger">
+                * Password must be of the minimum 8 characters long
+              </ion-text>
+            </ion-text>
+          </div>
         </form>
       </ion-item-group>
     </ion-list>
