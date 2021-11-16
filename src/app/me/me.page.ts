@@ -29,4 +29,10 @@ export class MePage implements OnInit {
     this.type = !this.type;
   }
 
+  signIn() {
+    if(!this.form.valid) {
+      this.form.markAllAsTouched();
+      return;
+    }
+  }
 }
