@@ -3,8 +3,10 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-me',
-  templateUrl: './me.page.html',
-  styleUrls: ['./me.page.scss'],
+  // templateUrl: './me.page.html',
+  templateUrl: './sign-in.page.html',
+  // styleUrls: ['./me.page.scss'],
+  styleUrls: ['./sign-in.page.scss'],
 })
 export class MePage implements OnInit {
 
@@ -33,6 +35,7 @@ export class MePage implements OnInit {
     if(!this.form.valid) {
       this.form.markAllAsTouched();
       return;
+      console.log(this.form.value);
     }
   }
 }

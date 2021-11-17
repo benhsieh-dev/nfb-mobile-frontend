@@ -4,9 +4,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MePageRoutingModule } from './me-routing.module';
+import { MePageRoutingModule } from './sign-in-routing.module';
 
-import { MePage } from './me.page';
+import { MePage } from './sign-in.page';
 
 @NgModule({
   imports: [
