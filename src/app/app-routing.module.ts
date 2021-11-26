@@ -24,9 +24,17 @@ const routes: Routes = [
     path: 'community',
     loadChildren: () => import('./community/community.module').then( m => m.CommunityPageModule)
   },
+  // {
+  //   path: 'me',
+  //   loadChildren: () => import('./Account/sign-in/sign-in.module').then( m => m.MePageModule)
+  // },
+  {
+    path: 'sign-in',
+    loadChildren: () => import('./Account/sign-in/sign-in.module').then( m => m.MePageModule)
+  },
   {
     path: 'me',
-    loadChildren: () => import('./Account/sign-in/sign-in.module').then( m => m.MePageModule)
+    loadChildren: () => import('./Account/me/me.module').then( m => m.MePageModule)
   },
 ];
 
