@@ -26,7 +26,7 @@ const routes: Routes = [
   },
   {
     path: 'me',
-    loadChildren: () => import('./Me/sign-in/sign-in.module').then( m => m.MePageModule)
+    loadChildren: () => import('./Account/sign-in/sign-in.module').then( m => m.MePageModule)
   },
 ];
 
