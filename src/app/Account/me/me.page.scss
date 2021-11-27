@@ -1,3 +1,10 @@
 ion-button {
     --border-radius: 20px; 
 }
+
+.me-page-shopping-cart {
+    display: flex;
+    // justify-content: flex-around;
+    margin-right: 10px;
+    font-size: 26px;
+}
