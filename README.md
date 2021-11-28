@@ -7,5 +7,6 @@
 - Capacitor
 - Ionic
 - SCSS
+- Spring Boot
 - TypeScript
 - XCode
