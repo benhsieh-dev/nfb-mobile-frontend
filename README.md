@@ -6,6 +6,7 @@
 - Angular
 - Capacitor
 - Ionic
+- MySQL
 - SCSS
 - Spring Boot
 - TypeScript
