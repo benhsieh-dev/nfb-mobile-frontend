@@ -8,13 +8,10 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
 
+import { ProductListComponent } from '../components/product-list/product-list.component';
+
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    HomePageRoutingModule
-  ],
-  declarations: [HomePage]
+  imports: [CommonModule, FormsModule, IonicModule, HomePageRoutingModule],
+  declarations: [HomePage, ProductListComponent],
 })
 export class HomePageModule {}
