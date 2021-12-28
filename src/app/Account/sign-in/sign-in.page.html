@@ -1,5 +1,6 @@
 <ion-header>
   <ion-toolbar>
+    <ion-title>Log in</ion-title>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="me"></ion-back-button>
     </ion-buttons>
@@ -22,7 +23,7 @@
     <ion-list lines="full">
       <ion-list-header>
         <ion-label>
-          Mobile Phone Sign In
+          Phone
         </ion-label>
       </ion-list-header>
       <ion-item-group>
@@ -75,14 +76,7 @@
         </form>
 
         <ion-item lines="none">
-          <ion-text color="danger" slot="start">
-            Forgot Password?
-          </ion-text>
-          <ion-text color="dark" slot="end">
-              <strong>
-                Sign Up
-              </strong>
-          </ion-text>
+          
         </ion-item>
       </ion-item-group>
     </ion-list>
@@ -90,9 +84,17 @@
 
   <ion-button expand="block">Log in</ion-button>
   <br />
-  Forgot Password?
+  <div class="forgot-password">
+    <ion-text color="primary">
+      Forgot Password?
+    </ion-text>
+  </div>
   <br />
   <br />
-  Don't have an account? <a routerLink="/sign-up">SIGN UP</a>
+  <div class="sign-up-link">
+    <ion-text> 
+      Don't have an account? <a routerLink="/sign-up">SIGN UP</a>
+    </ion-text>
+  </div>
 
 </ion-content>
