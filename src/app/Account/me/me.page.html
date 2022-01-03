@@ -7,18 +7,22 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  
-
-  <div>
-    <ion-avatar>
-      <img src="../../assets/bitcoin.jpg" />
-    </ion-avatar>
+<ion-content [fullscreen]="true">  
+  <br />
+  <div class="user-account">
+    <div>
+      <ion-avatar>
+        <img src="../../assets/bitcoin.jpg" />
+      </ion-avatar>
+    </div>
+    <div class="username">
+      <ion-text>Your User Name</ion-text>
+    </div>
   </div>
 
+  <br />
   <section>
-        <header>Your User Name</header>
-        <ion-button expand="block" routerLink="/sign-in">Log In or Sign Up</ion-button>
+      <ion-button expand="block" routerLink="/sign-in">Log In or Sign Up</ion-button>
   </section>
 
 </ion-content>
