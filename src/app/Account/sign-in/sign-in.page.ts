@@ -9,20 +9,23 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./sign-in.page.scss'],
 })
 export class MePage implements OnInit {
-
-  form: FormGroup;
+  signInForm: FormGroup;
   // eslint-disable-next-line @typescript-eslint/no-inferrable-types
   type: boolean = true;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-    this.form = new FormGroup({
+    this.signInForm = new FormGroup({
       phone: new FormControl(null, {
-        validators: [Validators.required, Validators.minLength(10), Validators.maxLength(10)]
+        validators: [
+          Validators.required,
+          Validators.minLength(10),
+          Validators.maxLength(10),
+        ],
       }),
-        password: new FormControl(null, {
-        validators: [Validators.required, Validators.minLength(8)]
+      password: new FormControl(null, {
+        validators: [Validators.required, Validators.minLength(8)],
       }),
     });
   }
@@ -32,10 +35,10 @@ export class MePage implements OnInit {
   }
 
   signIn() {
-    if(!this.form.valid) {
-      this.form.markAllAsTouched();
+    if (!this.signInForm.valid) {
+      this.signInForm.markAllAsTouched();
       return;
-      console.log(this.form.value);
+      console.log(this.signInForm.value);
     }
   }
 }

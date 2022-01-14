@@ -7,14 +7,14 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./sign-up.page.scss'],
 })
 export class SignUpPage implements OnInit {
-  form: FormGroup;
+  signUpForm: FormGroup;
   // eslint-disable-next-line @typescript-eslint/no-inferrable-types
   type: boolean = true;
 
   constructor() {}
 
   ngOnInit() {
-    this.form = new FormGroup({
+    this.signUpForm = new FormGroup({
       phone: new FormControl(null, {
         validators: [
           Validators.required,
@@ -33,10 +33,10 @@ export class SignUpPage implements OnInit {
   }
 
   signUp() {
-    if (!this.form.valid) {
-      this.form.markAllAsTouched();
+    if (!this.signUpForm.valid) {
+      this.signUpForm.markAllAsTouched();
       return;
-      console.log(this.form.value);
+      console.log(this.signUpForm.value);
     }
   }
 }
