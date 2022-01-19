@@ -1,6 +1,7 @@
 
 ion-row {
     display: block;
+ 
     ion-list {
         --border-radius: 20px;
     }
@@ -9,10 +10,10 @@ ion-row {
 ion-button {
     --border-radius: 20px; 
 }
-
+  
+    
 .forgot-password {
     text-align: center;
-    color: blue;
 }
 
 .sign-up-link {
@@ -25,4 +26,16 @@ ion-button {
     text-decoration: underline;
     font-weight: 700;
     font-size: 16px;
+}
+
+
+ion-input {
+    background-color: lightgray;
+    margin: 0%;
+}
+
+ion-icon {
+    background-color: lightgray;
+    margin: 0%; 
+    height: 39px;
 }

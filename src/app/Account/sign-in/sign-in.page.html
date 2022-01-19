@@ -22,7 +22,7 @@
           Phone
         </ion-label>
       </ion-list-header>
-      <ion-item-group>
+      <ion-item-group class="sign-in-form">
         <form [formGroup]="signInForm">
           <div>
             <ion-item>
@@ -48,9 +48,9 @@
           <div>
             <ion-item>
               <ion-icon 
-                [name]="type ? 'eye-outline' : 'eye-offline'" 
+                [name]="type ? 'eye-outline' : 'eye-off-outline'" 
                 slot="end" 
-                color="medium"
+                color="dark"
                 (click)="changeType()">
               </ion-icon>
               <ion-input
@@ -92,5 +92,16 @@
       Don't have an account? <a routerLink="/sign-up">SIGN UP</a>
     </ion-text>
   </div>
+
+  <!-- <ion-button>Default</ion-button>
+  <ion-button color="primary">Primary</ion-button>
+  <ion-button color="secondary">Secondary</ion-button>
+  <ion-button color="tertiary">Tertiary</ion-button>
+  <ion-button color="success">Success</ion-button>
+  <ion-button color="warning">Warning</ion-button>
+  <ion-button color="danger">Danger</ion-button>
+  <ion-button color="light">Light</ion-button>
+  <ion-button color="medium">Medium</ion-button>
+  <ion-button color="dark">Dark</ion-button> -->
 
 </ion-content>
