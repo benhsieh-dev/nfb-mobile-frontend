@@ -38,7 +38,8 @@ export class MePage implements OnInit {
     if (!this.signInForm.valid) {
       this.signInForm.markAllAsTouched();
       return;
-      console.log(this.signInForm.value);
     }
+      console.log(this.signInForm.value);
   }
+
 }
