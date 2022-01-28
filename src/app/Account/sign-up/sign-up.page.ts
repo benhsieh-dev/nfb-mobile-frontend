@@ -36,7 +36,7 @@ export class SignUpPage implements OnInit {
     if (!this.signUpForm.valid) {
       this.signUpForm.markAllAsTouched();
       return;
-      console.log(this.signUpForm.value);
     }
+     console.log(this.signUpForm.value);
   }
 }
