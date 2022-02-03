@@ -42,4 +42,8 @@ export class MePage implements OnInit {
       console.log(this.signInForm.value);
   }
 
+  forgotPassword() {
+    console.log('forgot password');
+  }
+
 }
