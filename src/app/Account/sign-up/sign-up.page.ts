@@ -39,4 +39,8 @@ export class SignUpPage implements OnInit {
     }
      console.log(this.signUpForm.value);
   }
+
+  verifyViaOtp() {
+    console.log('otp', this.signUpForm.value);
+  }
 }

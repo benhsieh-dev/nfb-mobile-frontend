@@ -27,6 +27,7 @@
         <form [formGroup]="signUpForm">
           <div>
             <ion-item>
+              <ion-button slot="end" fill="clear" color="primary" (click)="verifyViaOtp()">VERIFY</ion-button>
               <ion-input 
                 formControlName="phone" 
                 placeholder="Phone Number"
