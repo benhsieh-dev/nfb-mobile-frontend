@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ModalController } from '@ionic/angular';
+import { OtpComponent } from './otp/otp.component';
 
 @Component({
   selector: 'app-sign-up',
@@ -11,7 +13,7 @@ export class SignUpPage implements OnInit {
   // eslint-disable-next-line @typescript-eslint/no-inferrable-types
   type: boolean = true;
 
-  constructor() {}
+  constructor(private modalCtrl: ModalController) {}
 
   ngOnInit() {
     this.signUpForm = new FormGroup({
@@ -40,7 +42,16 @@ export class SignUpPage implements OnInit {
      console.log(this.signUpForm.value);
   }
 
-  verifyViaOtp() {
+  async verifyViaOtp() {
     console.log('otp', this.signUpForm.value);
+    const options: any = {
+      component: OtpComponent
+    };
+    const modal = await this.modalCtrl.create(options);
+    await modal.present();
+    const { data } = await modal.onWillDismiss();
+    if(data) {
+      // work on it
+    }
   }
 }
