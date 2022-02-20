@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ModalController } from '@ionic/angular';
+import { ModalController, ToastController } from '@ionic/angular';
 import { OtpComponent } from './otp/otp.component';
 
 @Component({
@@ -13,7 +13,10 @@ export class SignUpPage implements OnInit {
   // eslint-disable-next-line @typescript-eslint/no-inferrable-types
   type: boolean = true;
 
-  constructor(private modalCtrl: ModalController) {}
+  constructor(
+    private modalCtrl: ModalController,
+    private toastCtrl: ToastController
+    ) {}
 
   ngOnInit() {
     this.signUpForm = new FormGroup({
@@ -44,14 +47,24 @@ export class SignUpPage implements OnInit {
 
   async verifyViaOtp() {
     console.log('otp', this.signUpForm.value);
-    const options: any = {
-      component: OtpComponent
-    };
-    const modal = await this.modalCtrl.create(options);
-    await modal.present();
-    const { data } = await modal.onWillDismiss();
-    if(data) {
+    const phoneNumber = this.signUpForm.value.phone;
+    if (phoneNumber && phoneNumber?.length === 10) {
+      const options: any = {
+        component: OtpComponent
+      };
+      const modal = await this.modalCtrl.create(options);
+      await modal.present();
+      const { data } = await modal.onWillDismiss();
+      if(data) {
       // work on it
+     }
+    } else {
+      const toast = await this.toastCtrl.create({
+        message: 'Please enter proper phone number',
+        duration: 5000,
+        color: 'danger'
+      });
+      toast.present();
+    }
     }
   }
-}
