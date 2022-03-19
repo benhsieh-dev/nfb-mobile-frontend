@@ -48,7 +48,7 @@ export class SignUpPage implements OnInit {
   async verifyViaOtp() {
     console.log('otp', this.signUpForm.value);
     const phoneNumber = this.signUpForm.value.phone;
-    if (phoneNumber && phoneNumber?.length === 10) {
+    if (!phoneNumber || (phoneNumber && phoneNumber?.length === 10)) {
       const options: any = {
         component: OtpComponent
       };
