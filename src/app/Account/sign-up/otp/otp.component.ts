@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-otp',
@@ -11,7 +12,7 @@ export class OtpComponent implements OnInit {
   otpString: string[] = ['', '', '', ''];
   isLoading = false;
 
-  constructor() { }
+  constructor(public modalCtrl: ModalController) { }
 
   ngOnInit() {}
 
