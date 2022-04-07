@@ -23,7 +23,10 @@ export class OtpComponent implements OnInit {
       console.log('enter');
     }, 500);
   }
-  otp(event) {
+  otp(event, prev, next, index) {
+    console.log(event);
+    const pattern = /[0-9]/;
+    // let inputChar = String.fromCharCode();
   }
 
 }
