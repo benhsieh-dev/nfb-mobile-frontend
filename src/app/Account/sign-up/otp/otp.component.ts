@@ -26,7 +26,13 @@ export class OtpComponent implements OnInit {
   otp(event, prev, next, index) {
     console.log(event);
     const pattern = /[0-9]/;
-    // let inputChar = String.fromCharCode();
+    const inputChar = String.fromCharCode(event.which ? event.which : event.keyCode);
+    if (!pattern.test(inputChar)) {
+      console.log('invalid character');
+      event.preventDefault();
+      this.otpString[index] = '';
+      return;
+    }
   }
 
 }
