@@ -27,13 +27,19 @@
         <form [formGroup]="signUpForm">
           <div>
             <ion-item>
-              <ion-button slot="end" fill="clear" color="primary" (click)="verifyViaOtp()">VERIFY</ion-button>
+              <ion-button 
+                *ngIf="!verified"
+                slot="end" fill="clear" color="primary" (click)="verifyViaOtp()">VERIFY</ion-button>
+              <ion-button 
+                *ngIf="verified"
+                slot="end" fill="clear" color="success">VERIFIED</ion-button>
               <ion-input 
                 formControlName="phone" 
                 placeholder="Phone Number"
                 type="tel"
                 minlength="10"
                 maxlength="10">
+                (ionChange)="changeNumber($event)"
               </ion-input>
             </ion-item>
             <ion-text *ngIf="!signUpForm.get('phone').valid && signUpForm.get('phone').touched">

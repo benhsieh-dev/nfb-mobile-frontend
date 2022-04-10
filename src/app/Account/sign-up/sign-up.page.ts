@@ -12,6 +12,8 @@ export class SignUpPage implements OnInit {
   signUpForm: FormGroup;
   // eslint-disable-next-line @typescript-eslint/no-inferrable-types
   type: boolean = true;
+  verified = false;
+  verifiedNumber: any;
 
   constructor(
     private modalCtrl: ModalController,
@@ -48,7 +50,7 @@ export class SignUpPage implements OnInit {
   async verifyViaOtp() {
     console.log('otp', this.signUpForm.value);
     const phoneNumber = this.signUpForm.value.phone;
-    if (!phoneNumber || (phoneNumber && phoneNumber?.length === 10)) {
+    if (phoneNumber && phoneNumber?.length === 10) {
       const options: any = {
         component: OtpComponent
       };
@@ -56,7 +58,9 @@ export class SignUpPage implements OnInit {
       await modal.present();
       const { data } = await modal.onWillDismiss();
       if(data) {
-      // work on it
+        console.log('otp: ', data);
+        this.verified = true;
+        this.verifiedNumber = phoneNumber;
      }
     } else {
       const toast = await this.toastCtrl.create({
@@ -66,5 +70,16 @@ export class SignUpPage implements OnInit {
       });
       toast.present();
     }
+    }
+
+    changeNumber(event) {
+      const phoneNumber = this.signUpForm.value.phone;
+      if (this.signUpForm.value) {
+        if (this.verifiedNumber && phoneNumber !== this.verifiedNumber) {
+          this.verified = true;
+        } else {
+          this.verified = false;
+        }
+      }
     }
   }
