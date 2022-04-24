@@ -38,8 +38,8 @@
                 placeholder="Phone Number"
                 type="tel"
                 minlength="10"
-                maxlength="10">
-                (ionChange)="changeNumber($event)"
+                maxlength="10"
+                (ionChange)="changeNumber($event)">
               </ion-input>
             </ion-item>
             <ion-text *ngIf="!signUpForm.get('phone').valid && signUpForm.get('phone').touched">
